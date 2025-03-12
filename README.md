@@ -2,7 +2,7 @@
 
 Semestr 6
 
-Drugi projekt z Technik WWW. Aplikacja internetowa: platforma zajmująca się z dystrybucją i sprzedażą gier.
+Drugi projekt. Aplikacja internetowa: platforma zajmująca się z dystrybucją i sprzedażą gier.
 Aplikacja  stworzona w architekutrze MVC ( Model-VIew-Controller).
 
 Back-end : środowisko Node.js oraz baza danych MySQL dla użytkowników aplikacji.
