@@ -1,0 +1,96 @@
+doctype html
+html
+  head
+    link(rel="stylesheet" href="/css/style-biblio.css")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css")
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js")
+
+  body
+    header
+      .left
+        .hamburger-menu
+          button#hamburgerBtn
+            .hamburger-icon
+          ul#dropdownMenu.dropdown-menu
+            li: a(href="/") Strona Główna
+            li: a(href="/biblioteka") Biblioteka
+            li: a(href="/koszyk") Twój koszyk
+
+      .logo-container
+        h1 NEXT
+        .logo
+          span
+            img(src="/images/game_logo_with_background_fixed-removebg-preview.png" alt="Logo")
+        h1 PLAY
+
+      .right
+        .user-info.p-2.border.border-warning.rounded-3.shadow-lg
+          p.text-warning.mb-0 #{username}
+          a(href="/koszyk")
+            img(src="/images/square_profile_icon.jpg" alt="Przejdź do koszyka" class="cart-icon")
+
+    .kontener
+      .wyszukiwarka
+        input(type="text" name="query" class="search-input" placeholder="Wyszukaj gry...")
+        button(type="submit" class="search-button") Szukaj
+
+    main
+      aside
+        h3 Kategorie gier
+        ul
+          li: a(href="#") RPG
+          li: a(href="#") Strzelanki
+          li: a(href="#") Strategie
+          li: a(href="#") Sportowe
+
+      section.games-grid
+        .game-card
+          img(src="/images/yotei.jpg" alt="Gra 2")
+          h4 Ghost of Yotei
+          button.btn-add(data-game="Yotei") Dodaj do profilu
+
+        .game-card
+          img(src="/images/cyberpunk.jpg" alt="Gra 3")
+          h4 Cyberpunk 2077
+          button.btn-add(data-game="Cyberpunkt 2077") Dodaj do profilu
+
+        .game-card
+          img(src="/images/The-Witcher-4_facebook-scaled.jpg" alt="Gra 1")
+          h4 Wiedzmin 4
+          button.btn-add(data-game="Wiedzmin 4") Dodaj do profilu
+
+        .game-card
+          img(src="/images/maxresdefault.jpg" alt="Gra 2")
+          h4 Intergalactic: The Heretic Prophet
+          button.btn-add(data-game="Intergalactic") Dodaj do profilu
+
+        .game-card
+          img(src="/images/assisins.jpg" alt="Gra 3")
+          h4 Assassins Creed Shadows
+          button.btn-add(data-game="Assasins Creed Shadows") Dodaj do profilu
+
+        .game-card
+          img(src="/images/kingdom.jpg" alt="Gra 1")
+          h4 Kingdom Come Deliverance
+          button.btn-add(data-game="Kingdom Come Deliverance") Dodaj do profilu
+
+        .game-card
+          img(src="/images/avowed.jpg" alt="Gra 2")
+          h4 Avowed
+          button.btn-add(data-game="Avowed") Dodaj do profilu
+
+        .game-card
+          img(src="/images/doom.jpg" alt="Gra 3")
+          h4 Doom The Dark Ages
+          button.btn-add(data-game="Doom The Dark Ages") Dodaj do profilu
+
+        .game-card
+          img(src="/images/gta6.jpg" alt="Gra 1")
+          h4 GTA 6
+          button.btn-add(data-game="GTA 6") Dodaj do profilu
+
+    footer
+      .footer-bottom
+        p &copy; 2025 Next Play. Wszelkie prawa zastrzeżone.
+
+    script(src="/js/button.js")

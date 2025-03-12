@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+body {
+    color: #feda6a;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1d1e22;;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #1d1e22;
+}
+
+.logo {
+    text-align: center;
+    flex: 1;
+}
+
+.left, .right {
+    display: flex;
+    align-items: center;
+}
+
+.right button {
+    margin-left: 10px;
+}
+
+.icon {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+main {
+    background-color: #1d1e22;
+    padding: 20px;
+}
+
+.left button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 40px;
+    border: 2px solid #feda6a;
+    background-color: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.left button:hover {
+    background-color: #feda6a;
+    box-shadow: rgba(254, 218, 106, 0.6) 0px 0px 20px;
+}
+
+.hamburger-icon {
+    width: 20px;
+    height: 2px;
+    background-color: #feda6a;
+    position: relative;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #feda6a;
+    left: 0;
+}
+
+.hamburger-icon::before {
+    top: -6px;
+}
+
+.hamburger-icon::after {
+    top: 6px;
+}
+
+.right button {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #feda6a;
+    background-color: transparent;
+    border: 2px solid #feda6a;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.right button:hover {
+    background-color: #feda6a;
+    color: #1d1e22;
+    box-shadow: rgba(254, 218, 106, 0.6) 0px 0px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container h1 {
+    color: #4b4e54;
+    margin: 0;
+    font-size: 6em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: "Jersey 15", serif;
+    display: inline-block;
+}
+
+.logo-container .logo span {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: #1d1e22;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logo-container .logo img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+footer {
+    background-color: #1d1e22;
+    color: #feda6a;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 1em;
+    color: #cccccc;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.footer-section a:hover {
+    color: #feda6a;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    border-top: 1px solid #feda6a;
+    padding-top: 10px;
+}
+
+
+
+
+
+/* Animacja zmiany treści */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+    background-color: #1d1e22;
+
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #1d1e22;
+    border: 1px solid #feda6a;
+    border-radius: 8px;
+    padding: 10px;
+    list-style: none;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    padding: 8px;
+    text-align: center;
+    background-color: #1d1e22;
+
+}
+
+.dropdown-menu li a {
+    color: #feda6a;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    
+
+}
+
+.dropdown-menu li a:hover {
+    color: #1d1e22;
+    background-color: #feda6a;
+    border-radius: 4px;
+    padding: 3px;
+
+
+}
+
+.hamburger-menu.active .dropdown-menu {
+    display: block;
+    background-color: #1d1e22;
+    border: 4px solid #feda6a;
+    border-radius: 20px;
+
+}
+
+
+
+.logout-button {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #feda6a;
+    background-color: transparent;
+    border: 2px solid #feda6a;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.logout-button:hover {
+    background-color: #feda6a;
+    color: #1d1e22;
+}
+
+
+
+/* Sekcja główna */
+main {
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #1d1e22;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Sekcja Profil Gracza */
+.profil, .profil2 {
+    width: 100%;
+    max-width: 800px;
+    background-color: #292C31;
+    padding: 30px;
+    border: 2px solid #feda6a;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profil h2, .profil2 h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #feda6a;
+    margin-bottom: 15px;
+}
+
+.profil p, .profil2 ul {
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+.profil2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profil2 li {
+    padding: 10px;
+    border-bottom: 1px solid #feda6a;
+}
+
+.profil2 li:last-child {
+    border-bottom: none;
+}
+
+/* Przyciski */
+.profil a, .profil2 a {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1em;
+    color: #1d1e22;
+    background-color: #feda6a;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+.profil a:hover, .profil2 a:hover {
+    background-color: #fff;
+    color: #1d1e22;
+}
+
+
+
+#product-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    color: #feda6a;
+}
+
+#product-list li {
+    background: #292C31;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.clear-cart-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #1d1e22;
+    background-color: #feda6a;
+    border: 2px solid #feda6a;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.clear-cart-btn:hover {
+    background-color: #1d1e22;
+    color: #feda6a;
+    box-shadow: rgba(254, 218, 106, 0.6) 0px 0px 20px;
+}
